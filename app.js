@@ -11,7 +11,7 @@ let randomNumber = Math.floor(Math.random() * 101)
 i = 0
 let game = () => {
     if (inpt.value == parseInt(inpt.value)) {
-        title.innerText = `You left only ${9 - i} try`
+        title.innerText = `You left only ${6 - i} try`
     }
     if (inpt.value != randomNumber) {
         const heartsC = document.querySelector('.img-c');
@@ -34,7 +34,7 @@ let game = () => {
         number.innerText = `Random number is ${randomNumber}`
         return 0   
     }
-    if (i === 9) {
+    if (i === 6) {
         title.innerText = 'You lost'
         number.innerText = `Random number is ${randomNumber}`
         return 0

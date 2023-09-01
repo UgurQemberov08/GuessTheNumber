@@ -23,11 +23,11 @@ let game = () => {
     }
     if (inpt.value < randomNumber) {
         increase.classList.add('borderAfter')
-        setTimeout(() => { increase.classList.remove('borderAfter') }, 1300);
+        setTimeout(() => { increase.classList.remove('borderAfter') }, 1500);
     }
     else if (inpt.value > randomNumber) {
         decrease.classList.add('borderAfter')
-        setTimeout(() => { decrease.classList.remove('borderAfter') }, 1300);
+        setTimeout(() => { decrease.classList.remove('borderAfter') }, 1500);
     }
     else if (inpt.value == randomNumber) {
         title.innerText = 'You won'
